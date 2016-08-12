@@ -8,7 +8,7 @@ mvn clean install
 java -jar target/discovery.eureka-server-0.1-SNAPSHOT.jar
 ```
 
-Eureka web ui: http://localhost:8761/
+Eureka web ui: [http://localhost:8761/](http://localhost:8761/)
 
 Retrieve application info:
 ```
