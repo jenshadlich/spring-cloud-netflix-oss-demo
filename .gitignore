@@ -1,6 +1,10 @@
 /atlassian-ide-plugin.xml
 /core/product/target
 /core/product/core.product.iml
+/core/stock/target
+/core/stock/core.stock.iml
+/compound/product/target
+/compound/product/compound.product.iml
 /discovery/target
 /discovery/discovery.eureka-server.iml
 /spring-cloud-netflix-oss-demo.iml
