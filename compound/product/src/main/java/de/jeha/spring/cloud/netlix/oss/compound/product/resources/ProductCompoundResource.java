@@ -45,36 +45,40 @@ public class ProductCompoundResource {
 
     private Product getProduct(String id) {
         ServiceInstance instance = loadBalancer.choose("core.product");
-        URI uri = instance.getUri();
-        final String url = uri.toString() + "/product/" + id;
+        if (instance != null) {
+            URI uri = instance.getUri();
+            final String url = uri.toString() + "/product/" + id;
 
-        LOG.info("Get product from '{}'", url);
-        ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
-        LOG.info("Status code: {}", response.getStatusCodeValue());
+            LOG.info("Get product from '{}'", url);
+            ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+            LOG.info("Status code: {}", response.getStatusCodeValue());
 
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            return mapper.reader().forType(Product.class).readValue(response.getBody());
-        } catch (IOException e) {
-            LOG.warn("Unable to process product response", e);
+            ObjectMapper mapper = new ObjectMapper();
+            try {
+                return mapper.reader().forType(Product.class).readValue(response.getBody());
+            } catch (IOException e) {
+                LOG.warn("Unable to process product response", e);
+            }
         }
         return null;
     }
 
     private Stock getStock(String productId) {
         ServiceInstance instance = loadBalancer.choose("core.stock");
-        URI uri = instance.getUri();
-        final String url = uri.toString() + "/stock/" + productId;
+        if (instance != null) {
+            URI uri = instance.getUri();
+            final String url = uri.toString() + "/stock/" + productId;
 
-        LOG.info("Get stock from '{}'", url);
-        ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
-        LOG.info("Status code: {}", response.getStatusCodeValue());
+            LOG.info("Get stock from '{}'", url);
+            ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+            LOG.info("Status code: {}", response.getStatusCodeValue());
 
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            return mapper.reader().forType(Stock.class).readValue(response.getBody());
-        } catch (IOException e) {
-            LOG.warn("Unable to process stock response", e);
+            ObjectMapper mapper = new ObjectMapper();
+            try {
+                return mapper.reader().forType(Stock.class).readValue(response.getBody());
+            } catch (IOException e) {
+                LOG.warn("Unable to process stock response", e);
+            }
         }
         return null;
     }
