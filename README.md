@@ -1,5 +1,7 @@
 # spring-cloud-netflix-oss-demo
 
+Uses: Zuul, Eureka, Ribbon, Hystrix
+
 ## Service discovery with Eureka
 
 ### Build:
