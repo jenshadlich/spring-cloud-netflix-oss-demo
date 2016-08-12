@@ -3,7 +3,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.jeha.demo.spring-cloud-netflix-oss</groupId>
-    <artifactId>eureka-server</artifactId>
+    <artifactId>discovery.eureka-server</artifactId>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
     <version>0.1-SNAPSHOT</version>
@@ -17,7 +17,6 @@
         <junit.version>4.12</junit.version>
         <logback.version>1.1.7</logback.version>
 
-        <main-class>de.jeha.demo.springboot.SpringBootDemoApplication</main-class>
         <buildTime>${maven.build.timestamp}</buildTime>
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
     </properties>
