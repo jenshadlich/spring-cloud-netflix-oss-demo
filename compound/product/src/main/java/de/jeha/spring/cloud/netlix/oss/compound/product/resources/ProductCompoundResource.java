@@ -44,7 +44,7 @@ public class ProductCompoundResource {
     }
 
     private Product getProduct(String id) {
-        ServiceInstance instance = loadBalancer.choose("core.product");
+        ServiceInstance instance = loadBalancer.choose("core-product");
         if (instance != null) {
             URI uri = instance.getUri();
             final String url = uri.toString() + "/product/" + id;
@@ -64,7 +64,7 @@ public class ProductCompoundResource {
     }
 
     private Stock getStock(String productId) {
-        ServiceInstance instance = loadBalancer.choose("core.stock");
+        ServiceInstance instance = loadBalancer.choose("core-stock");
         if (instance != null) {
             URI uri = instance.getUri();
             final String url = uri.toString() + "/stock/" + productId;

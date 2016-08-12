@@ -1,6 +1,6 @@
 spring:
   application:
-    name: core.stock
+    name: core-stock
 
   cloud:
     config:

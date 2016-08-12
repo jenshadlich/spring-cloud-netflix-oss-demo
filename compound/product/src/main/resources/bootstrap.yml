@@ -1,6 +1,6 @@
 spring:
   application:
-    name: compound.product
+    name: compound-product
 
   cloud:
     config:

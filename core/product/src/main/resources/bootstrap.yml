@@ -1,6 +1,6 @@
 spring:
   application:
-    name: core.product
+    name: core-product
 
   cloud:
     config:
