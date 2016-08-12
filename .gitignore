@@ -1,3 +1,5 @@
+/discovery/target
+/discovery/eureka-server.iml
 /spring-cloud-netflix-oss-demo.ipr
 /atlassian-ide-plugin.xml
 /spring-cloud-netflix-oss-demo.iws
