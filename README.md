@@ -1,21 +1,27 @@
 # spring-cloud-netflix-oss-demo
 
-## discovery (Eureka)
+## Service discovery with Eureka
 
+### Build:
 ```
 cd discovery
 mvn clean install
 java -jar target/discovery.eureka-server-0.1-SNAPSHOT.jar
 ```
 
+### Run:
+```
+java -jar target/discovery.eureka-server-0.1-SNAPSHOT.jar
+```
+
 Eureka web ui: [http://localhost:8761/](http://localhost:8761/)
 
-Retrieve application info:
+### Retrieve application info:
 ```
 curl -s -H "Accept: application/json" http://localhost:8761/eureka/apps | jsonpp
 ```
 
-Retrieve application info (with filters applied):
+### Retrieve application info (with filters applied):
 ```
 curl -s -H "Accept: application/json" http://localhost:8761/eureka/apps | jq '.applications.application[] | .name as $service | ( .instance[] | { service: $service, instanceId: .instanceId, ipAddr: .ipAddr, port: .port."$", status: .status} )'
 ```
