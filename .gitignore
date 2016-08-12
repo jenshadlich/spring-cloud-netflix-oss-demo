@@ -7,6 +7,8 @@
 /compound/product/compound.product.iml
 /discovery/target
 /discovery/discovery.eureka-server.iml
+/edge/target
+/edge/edge.zuul-server.iml
 /spring-cloud-netflix-oss-demo.iml
 /spring-cloud-netflix-oss-demo.ipr
 /spring-cloud-netflix-oss-demo.iws
