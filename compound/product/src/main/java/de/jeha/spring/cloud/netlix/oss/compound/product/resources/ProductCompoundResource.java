@@ -48,7 +48,9 @@ public class ProductCompoundResource {
         URI uri = instance.getUri();
         final String url = uri.toString() + "/product/" + id;
 
+        LOG.info("Get product from '{}'", url);
         ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+        LOG.info("Status code: {}", response.getStatusCodeValue());
 
         ObjectMapper mapper = new ObjectMapper();
         try {
@@ -64,7 +66,9 @@ public class ProductCompoundResource {
         URI uri = instance.getUri();
         final String url = uri.toString() + "/stock/" + productId;
 
+        LOG.info("Get stock from '{}'", url);
         ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+        LOG.info("Status code: {}", response.getStatusCodeValue());
 
         ObjectMapper mapper = new ObjectMapper();
         try {
