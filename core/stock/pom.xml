@@ -6,6 +6,7 @@
         <groupId>de.jeha.demo.spring-cloud-netflix-oss</groupId>
         <artifactId>parent</artifactId>
         <version>0.1-SNAPSHOT</version>
+        <relativePath/>
     </parent>
     <artifactId>core.stock</artifactId>
     <name>${project.artifactId}</name>
