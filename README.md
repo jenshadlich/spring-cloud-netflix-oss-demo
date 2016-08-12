@@ -1,5 +1,7 @@
 # spring-cloud-netflix-oss-demo
 
+![build](https://api.travis-ci.org/jenshadlich/spring-cloud-netflix-oss-demo.svg)
+
 Uses: Zuul, Eureka, Ribbon, Hystrix
 
 ## Service discovery with Eureka
