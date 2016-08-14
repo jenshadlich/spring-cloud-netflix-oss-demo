@@ -14,7 +14,7 @@ Uses: Zuul, Eureka, Ribbon, Hystrix
 * `compound-product`
   * higher level service that uses `core-stock` and `core-product`
   * port 8080
-  * [Hystrix dashboard](http://localhost:8080/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8080%2Fhystrix.stream)
+  * [Hystrix dashboard](http://localhost:8080/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8080%2Fhystrix.stream) is enabled
   * Example: [http://localhost:8080/product/1](http://localhost:8080/product/1)
 
 ## Service discovery with Eureka
