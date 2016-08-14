@@ -4,6 +4,18 @@
 
 Uses: Zuul, Eureka, Ribbon, Hystrix
 
+## Components
+
+* discovery (Eureka server)
+* core-stock
+  * random port
+* core-product
+  * random port
+* compound-product
+  * higher level service that use core-stock and core-product
+  * port 8080
+  * [Hystrix dashboard](http://localhost:8080/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8080%2Fhystrix.stream)
+
 ## Service discovery with Eureka
 
 ### Build:
