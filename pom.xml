@@ -21,6 +21,7 @@
         <module>core/stock</module>
         <module>discovery</module>
         <module>edge</module>
+        <module>monitoring</module>
     </modules>
 
     <properties>

@@ -9,6 +9,9 @@
 /discovery/discovery.eureka-server.iml
 /edge/target
 /edge/edge.zuul-server.iml
+/parent.iml
+/monitoring/target
+/monitoring/monitoring.turbine-server.iml
 /spring-cloud-netflix-oss-demo.iml
 /spring-cloud-netflix-oss-demo.ipr
 /spring-cloud-netflix-oss-demo.iws
