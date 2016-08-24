@@ -1,0 +1,16 @@
+info:
+  component: Auth Server
+
+server:
+  port: 9999
+  contextPath: /uaa
+
+security:
+  user:
+    password: password
+  oauth2:
+    client:
+      clientId: demo
+      clientSecret: secret
+      authorized-grant-types: authorization_code,refresh_token,password,implicit,client_credentials
+      scope: webshop
