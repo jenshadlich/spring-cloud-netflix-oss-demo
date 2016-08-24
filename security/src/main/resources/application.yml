@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: auth-server
+
 info:
   component: Auth Server
 
