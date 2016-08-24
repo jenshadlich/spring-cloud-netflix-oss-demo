@@ -10,7 +10,7 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
 
-#security:
-#  oauth2:
-#    resource:
-#      userInfoUri: http://localhost:9999/uaa/user
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://user:password@localhost:9999/uaa/user
