@@ -1,0 +1,47 @@
+version: '2'
+
+services:
+
+#  auth:
+#    image: jenshadlich/sc-auth-server
+#    ports:
+#      - "9999:9999"
+
+  discovery:
+    image: jenshadlich/sc-eureka-server
+    ports:
+      - "8761:8761"
+
+#  edge:
+#    image: jenshadlich/sc-zuul-server
+#    ports:
+#      - "8765:8765"
+#    links:
+#      - discovery
+
+#  turbine:
+#    image: jenshadlich/sc-turbine-server
+#    ports:
+#      - "8989:8989"
+
+  compound-product:
+    image: jenshadlich/sc-compound-product
+    ports:
+      - "8080:8080"
+    links:
+      - discovery
+#      - auth
+#      - edge
+#      - turbine
+      - core-product
+      - core-stock
+
+  core-product:
+    image: jenshadlich/sc-core-product
+    links:
+      - discovery
+
+  core-stock:
+    image: jenshadlich/sc-core-stock
+    links:
+      - discovery
