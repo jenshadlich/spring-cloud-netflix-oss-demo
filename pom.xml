@@ -23,6 +23,7 @@
         <module>edge</module>
         <module>monitoring</module>
         <module>security</module>
+        <module>tracing</module>
     </modules>
 
     <properties>

@@ -28,7 +28,8 @@ public class StockDataProvider {
     @Autowired
     private LoadBalancerClient loadBalancer;
 
-    private RestTemplate restTemplate = new RestTemplate();
+    @Autowired
+    private RestTemplate restTemplate;
 
     /**
      * @param productId product id
