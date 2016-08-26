@@ -2,7 +2,7 @@
 
 ![build](https://api.travis-ci.org/jenshadlich/spring-cloud-netflix-oss-demo.svg)
 
-Uses: Zuul, Eureka, Ribbon, Hystrix
+Uses: Zuul, Eureka, Ribbon, Hystrix, Turbine
 
 ## Components
 
