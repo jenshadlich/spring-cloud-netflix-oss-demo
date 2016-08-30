@@ -17,4 +17,5 @@ zuul:
   prefix: /api
   routes:
     api-product:
-      path: /api-product/**
+      path: /product/**
+      strip-prefix: false
