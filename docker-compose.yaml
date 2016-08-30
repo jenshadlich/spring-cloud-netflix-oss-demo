@@ -26,8 +26,8 @@ services:
     links:
       - discovery
 
-  compound-product:
-    image: jenshadlich/sc-compound-product
+  api-product:
+    image: jenshadlich/sc-api-product
     ports:
       - "8080:8080"
     links:

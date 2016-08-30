@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: api-product
+
+  cloud:
+    config:
+      uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@localhost:8888}
+
+---
+# docker deployment config
+spring:
+  profiles: docker
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/

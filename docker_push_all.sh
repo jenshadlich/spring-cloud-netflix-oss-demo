@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-docker push jenshadlich/sc-compound-product:latest
+docker push jenshadlich/sc-api-product:latest
 docker push jenshadlich/sc-core-product:latest
 docker push jenshadlich/sc-core-stock:latest
 docker push jenshadlich/sc-eureka-server:latest

@@ -11,7 +11,7 @@ Uses: Zuul, Eureka, Ribbon, Hystrix, Turbine
   * random port
 * `core-product`
   * random port
-* `compound-product`
+* `api-product`
   * higher level service that uses `core-stock` and `core-product`
   * port 8080
   * [Hystrix dashboard](http://localhost:8080/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8080%2Fhystrix.stream) is enabled
@@ -47,31 +47,45 @@ Example output:
 
 ```
 {
-  "service": "COMPOUND.PRODUCT",
-  "instanceId": "compound.product:e9ab069f49abe8cffc215d80944fd06b",
-  "ipAddr": "10.x.x.181",
+  "service": "CORE-STOCK",
+  "instanceId": "core-stock:676c02cd118ff7d028727bcb744af206",
+  "ipAddr": "172.18.0.6",
+  "port": 44680,
+  "status": "UP"
+}
+{
+  "service": "CORE-STOCK",
+  "instanceId": "core-stock:f05c02672a13bde4ae8827627908d4d6",
+  "ipAddr": "172.18.0.8",
+  "port": 38100,
+  "status": "UP"
+}
+{
+  "service": "TURBINE",
+  "instanceId": "4dcf0c45e83a:turbine:8989",
+  "ipAddr": "172.18.0.5",
+  "port": 8989,
+  "status": "UP"
+}
+{
+  "service": "CORE-PRODUCT",
+  "instanceId": "core-product:51e1c12bdc7ad6b58555c205249c61f6",
+  "ipAddr": "172.18.0.4",
+  "port": 36571,
+  "status": "UP"
+}
+{
+  "service": "API-PRODUCT",
+  "instanceId": "api-product:fee174f2f33bd4ac23381923d537fae2",
+  "ipAddr": "172.18.0.7",
   "port": 8080,
   "status": "UP"
 }
 {
-  "service": "CORE.PRODUCT",
-  "instanceId": "core.product:aac7415cf4e0fbaeeb8e35bbee00cb6e",
-  "ipAddr": "10.x.x.181",
-  "port": 63981,
-  "status": "UP"
-}
-{
-  "service": "CORE.STOCK",
-  "instanceId": "core.stock:5e9bb499bf59c43eb8551f5196b6522f",
-  "ipAddr": "10.x.x.181",
-  "port": 61262,
-  "status": "UP"
-}
-{
-  "service": "CORE.STOCK",
-  "instanceId": "core.stock:8f5c0330b939c1643645d83b91ad9795",
-  "ipAddr": "10.x.x.181",
-  "port": 61268,
+  "service": "EDGE",
+  "instanceId": "97f2fac83e61:edge:8765",
+  "ipAddr": "172.18.0.3",
+  "port": 8765,
   "status": "UP"
 }
 ```

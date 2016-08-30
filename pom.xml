@@ -16,13 +16,13 @@
     </developers>
 
     <modules>
-        <module>compound/product</module>
-        <module>core/product</module>
-        <module>core/stock</module>
-        <module>discovery</module>
-        <module>edge</module>
-        <module>monitoring</module>
-        <module>security</module>
+        <module>api-services/product</module>
+        <module>core-services/product</module>
+        <module>core-services/stock</module>
+        <module>infrastructure/discovery</module>
+        <module>infrastructure/edge</module>
+        <module>infrastructure/monitoring</module>
+        <module>infrastructure/security</module>
     </modules>
 
     <properties>
