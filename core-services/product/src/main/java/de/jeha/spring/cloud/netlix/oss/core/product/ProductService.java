@@ -9,10 +9,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ProductApiService {
+public class ProductService {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProductApiService.class, args);
+        SpringApplication.run(ProductService.class, args);
     }
 
 }
